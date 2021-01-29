@@ -52,7 +52,7 @@ Distributive Laws:
 
 The elements of $\Omega$ all have $\underline{\textit{equal probability}}$; so if there are N elements in $\Omega$, each of them has probability 1/N. If A can occur in any of n mutually exclusive ways, then P(A) = n/N
 
-$$P(A) = \frac{\textit{number of ways A can occur}}{\textit{total number of outcomes}}$$
+$P(A) = \frac{\textit{number of ways A can occur}}{\textit{total number of outcomes}}$
 
 - **Multiplication principle**: If one experiment has m outcomes and another experiment has n outcomes, then there are mn possible outcomes for the two experiments.
 - **Extended multiplication principle**: If there are p experiments, and the first has n1 possible outcomes, the second
@@ -62,13 +62,18 @@ n2, ..., and the pth np possible outcomes, then there are a total of $n1n2...np$
 - A **combination** is unordered sample
 - The number of unordered samples of r objects selected from n objects without replacement is $\binom{n}{r}$
 - The numbers $\binom{n}{r}$, called the **binomial coefficients**, occur in the expansion
-$$(a + b)^n = \sum^n_{k=0}\binom{n}{k}a^kb^{n-k}$$
+
+$(a + b)^n = \sum^n_{k=0}\binom{n}{k}a^kb^{n-k}$
+
 - In particular, $2^n=\sum^n_{k=0}\binom{n}{k}$
 - Suppose that n items are in a lot and a sample of size r is taken. The lot contains k defective items. What is the probability that the sample contains exactly m defectives?
-$$P(A) = \frac{\binom{k}{m}\binom{n-k}{r-m}}{\binom{n}{r}}$$
+
+$P(A) = \frac{\binom{k}{m}\binom{n-k}{r-m}}{\binom{n}{r}}$
+
 - The number of ways that $n$ objects can be grouped into $r$ classes with $n_i$ in the $i^{th}$ class, $i = 1,..., r$, and
 $\sum^r_{i=1}n_i=n$
-$$\binom{n}{n_1n_2...n_r} =\frac{n!}{n_1!n_2!...n_r!} = \textit{multinomial coefficients}$$
+
+$\binom{n}{n_1n_2...n_r} =\frac{n!}{n_1!n_2!...n_r!} = \textit{multinomial coefficients}$
 
 **Important examples**:
 
@@ -79,23 +84,27 @@ $$\binom{n}{n_1n_2...n_r} =\frac{n!}{n_1!n_2!...n_r!} = \textit{multinomial coef
 # 1.5 Conditional Probability
 
 Let A and B be two events with $P(B) \ne 0$. The conditional probability of A given B is defined to be
-$$P(A | B) = \frac{P(A \cap B)}{P(B)}$$
+
+$P(A | B) = \frac{P(A \cap B)}{P(B)}$
 
 - MULTIPLICATION LAW: Let A and B be events and assume $P(B) \ne 0$. Then $P(A \cap B) = P(A | B)P(B)$
 
 - LAW OF TOTAL PROBABILITY: Let $B1, B2, ..., Bn$ be such that
 $\bigcup^n_{i=1}B_i = \Omega$ and $Bi \cap Bj = \emptyset$ for $i \ne j$ , with $P(B_i) > 0$ for all $i$ . Then, for any event A,
-$$P(A) = \sum^n_{i=1}P(A | B_i )P(B_i )$$
+
+$P(A) = \sum^n_{i=1}P(A | B_i )P(B_i )$
 
 **BAYES' RULE**: Let A and $B1,.., Bn$ be events where the Bi are disjoint,$\bigcup^n_{i=1}B_i = \Omega$ and $P(B_i) > 0$ for all $i$. Then
-$$P(B_j | A) = \frac{P(A | B_j )P(B_j )}{\sum^n_{i=1}P(A | B_i )P(Bi )}$$
+
+$P(B_j | A) = \frac{P(A | B_j )P(B_j )}{\sum^n_{i=1}P(A | B_i )P(Bi )}$
 
 # 1.6 Independence
 
 A and B are said to be independent events if $P(A \cap B) = P(A)P(B)$.
 
 a collection of events, $A_1, A_2,... , A_n$, to be **mutually independent** if for any subcollection, $Ai1,... , Aim$ ,
-$$P(A_{i_1} \cap ... \cap A_{i_m} ) = P(A_{i_1} ) · · · P(A_{i_m})$$
+
+$P(A_{i_1} \cap ... \cap A_{i_m} ) = P(A_{i_1} ) · · · P(A_{i_m})$
 
 Special examples
 - Matching DNA Fragments

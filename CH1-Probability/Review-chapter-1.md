@@ -55,7 +55,7 @@ The elements of *Ω* all have $\\underline{\\textit{equal probability}}$;
 so if there are N elements in *Ω*, each of them has probability 1/N. If
 A can occur in any of n mutually exclusive ways, then P(A) = n/N
 
-$$P(A) = \\frac{\\textit{number of ways A can occur}}{\\textit{total number of outcomes}}$$
+$P(A) = \\frac{\\textit{number of ways A can occur}}{\\textit{total number of outcomes}}$
 
 -   **Multiplication principle**: If one experiment has m outcomes and
     another experiment has n outcomes, then there are mn possible
@@ -75,16 +75,21 @@ $$P(A) = \\frac{\\textit{number of ways A can occur}}{\\textit{total number of o
     without replacement is $\\binom{n}{r}$
 -   The numbers $\\binom{n}{r}$, called the **binomial coefficients**,
     occur in the expansion
-    $$(a + b)^n = \\sum^n\_{k=0}\\binom{n}{k}a^kb^{n-k}$$
+
+$(a + b)^n = \\sum^n\_{k=0}\\binom{n}{k}a^kb^{n-k}$
+
 -   In particular, $2^n=\\sum^n\_{k=0}\\binom{n}{k}$
 -   Suppose that n items are in a lot and a sample of size r is taken.
     The lot contains k defective items. What is the probability that the
     sample contains exactly m defectives?
-    $$P(A) = \\frac{\\binom{k}{m}\\binom{n-k}{r-m}}{\\binom{n}{r}}$$
+
+$P(A) = \\frac{\\binom{k}{m}\\binom{n-k}{r-m}}{\\binom{n}{r}}$
+
 -   The number of ways that *n* objects can be grouped into *r* classes
     with *n*<sub>*i*</sub> in the *i*<sup>*t**h*</sup> class,
     *i* = 1, ..., *r*, and $\\sum^r\_{i=1}n\_i=n$
-    $$\\binom{n}{n\_1n\_2...n\_r} =\\frac{n!}{n\_1!n\_2!...n\_r!} = \\textit{multinomial coefficients}$$
+
+$\\binom{n}{n\_1n\_2...n\_r} =\\frac{n!}{n\_1!n\_2!...n\_r!} = \\textit{multinomial coefficients}$
 
 **Important examples**:
 
@@ -96,7 +101,8 @@ $$P(A) = \\frac{\\textit{number of ways A can occur}}{\\textit{total number of o
 
 Let A and B be two events with *P*(*B*) ≠ 0. The conditional probability
 of A given B is defined to be
-$$P(A | B) = \\frac{P(A \\cap B)}{P(B)}$$
+
+$P(A | B) = \\frac{P(A \\cap B)}{P(B)}$
 
 -   MULTIPLICATION LAW: Let A and B be events and assume *P*(*B*) ≠ 0.
     Then *P*(*A* ∩ *B*) = *P*(*A*|*B*)*P*(*B*)
@@ -105,12 +111,14 @@ $$P(A | B) = \\frac{P(A \\cap B)}{P(B)}$$
     $\\bigcup^n\_{i=1}B\_i = \\Omega$ and *B**i* ∩ *B**j* = ∅ for
     *i* ≠ *j* , with *P*(*B*<sub>*i*</sub>) &gt; 0 for all *i* . Then,
     for any event A,
-    $$P(A) = \\sum^n\_{i=1}P(A | B\_i )P(B\_i )$$
+
+$P(A) = \\sum^n\_{i=1}P(A | B\_i )P(B\_i )$
 
 **BAYES’ RULE**: Let A and *B*1, .., *B**n* be events where the Bi are
 disjoint,$\\bigcup^n\_{i=1}B\_i = \\Omega$ and
 *P*(*B*<sub>*i*</sub>) &gt; 0 for all *i*. Then
-$$P(B\_j | A) = \\frac{P(A | B\_j )P(B\_j )}{\\sum^n\_{i=1}P(A | B\_i )P(Bi )}$$
+
+$P(B\_j | A) = \\frac{P(A | B\_j )P(B\_j )}{\\sum^n\_{i=1}P(A | B\_i )P(Bi )}$
 
 # 1.6 Independence
 
@@ -121,6 +129,7 @@ a collection of events,
 *A*<sub>1</sub>, *A*<sub>2</sub>, ..., *A*<sub>*n*</sub>, to be
 **mutually independent** if for any subcollection,
 *A**i*1, ..., *A**i**m* ,
+
 *P*(*A*<sub>*i*<sub>1</sub></sub> ∩ ... ∩ *A*<sub>*i*<sub>*m*</sub></sub>) = *P*(*A*<sub>*i*<sub>1</sub></sub>) ·  ·  · *P*(*A*<sub>*i*<sub>*m*</sub></sub>)
 
 Special examples - Matching DNA Fragments
