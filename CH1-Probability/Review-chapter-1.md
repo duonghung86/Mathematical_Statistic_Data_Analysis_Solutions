@@ -87,9 +87,9 @@ $P(A) = \\frac{\\binom{k}{m}\\binom{n-k}{r-m}}{\\binom{n}{r}}$
 
 -   The number of ways that *n* objects can be grouped into *r* classes
     with *n*<sub>*i*</sub> in the *i*<sup>*t**h*</sup> class,
-    *i* = 1, ..., *r*, and $\\sum^r\_{i=1}n\_i=n$
+    *i* = 1, ..., *r*, and $\\sum^r\_{i=1}n_i=n$
 
-$\\binom{n}{n\_1n\_2...n\_r} =\\frac{n!}{n\_1!n\_2!...n\_r!} = \\textit{multinomial coefficients}$
+$\\binom{n}{n_1n_2...n_r} =\\frac{n!}{n_1!n_2!...n_r!} = \\textit{multinomial coefficients}$
 
 **Important examples**:
 
@@ -102,23 +102,23 @@ $\\binom{n}{n\_1n\_2...n\_r} =\\frac{n!}{n\_1!n\_2!...n\_r!} = \\textit{multinom
 Let A and B be two events with *P*(*B*) ≠ 0. The conditional probability
 of A given B is defined to be
 
-$P(A | B) = \\frac{P(A \\cap B)}{P(B)}$
+$P(A \| B) = \\frac{P(A \\cap B)}{P(B)}$
 
 -   MULTIPLICATION LAW: Let A and B be events and assume *P*(*B*) ≠ 0.
-    Then *P*(*A* ∩ *B*) = *P*(*A*|*B*)*P*(*B*)
+    Then *P*(*A* ∩ *B*) = *P*(*A*\|*B*)*P*(*B*)
 
 -   LAW OF TOTAL PROBABILITY: Let *B*1, *B*2, ..., *B**n* be such that
-    $\\bigcup^n\_{i=1}B\_i = \\Omega$ and *B**i* ∩ *B**j* = ∅ for
-    *i* ≠ *j* , with *P*(*B*<sub>*i*</sub>) &gt; 0 for all *i* . Then,
-    for any event A,
+    $\\bigcup^n\_{i=1}B_i = \\Omega$ and *B**i* ∩ *B**j* = ∅ for
+    *i* ≠ *j* , with *P*(*B*<sub>*i*</sub>) \> 0 for all *i* . Then, for
+    any event A,
 
-$P(A) = \\sum^n\_{i=1}P(A | B\_i )P(B\_i )$
+$P(A) = \\sum^n\_{i=1}P(A \| B_i )P(B_i )$
 
 **BAYES’ RULE**: Let A and *B*1, .., *B**n* be events where the Bi are
-disjoint,$\\bigcup^n\_{i=1}B\_i = \\Omega$ and
-*P*(*B*<sub>*i*</sub>) &gt; 0 for all *i*. Then
+disjoint,$\\bigcup^n\_{i=1}B_i = \\Omega$ and
+*P*(*B*<sub>*i*</sub>) \> 0 for all *i*. Then
 
-$P(B\_j | A) = \\frac{P(A | B\_j )P(B\_j )}{\\sum^n\_{i=1}P(A | B\_i )P(Bi )}$
+$P(B_j \| A) = \\frac{P(A \| B_j )P(B_j )}{\\sum^n\_{i=1}P(A \| B_i )P(Bi )}$
 
 # 1.6 Independence
 

@@ -3,7 +3,8 @@ title: "Review Chapter 1 Probability"
 author: Thanh Hung Duong
 date: 1/28/2021
 output:
-    md_document
+    md_document:
+        variant: markdown_github
 ---
 
 # 1.2 Sample space
