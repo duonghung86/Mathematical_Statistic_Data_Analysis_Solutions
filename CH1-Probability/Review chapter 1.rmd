@@ -1,8 +1,9 @@
 ---
 title: "Review Chapter 1 Probability"
-author: Thanh Hung Duong
-date: 1/28/2021
-output: html_document
+author: "Thanh Hung Duong"
+date: "1/28/2021"
+output:
+  pdf_document: default
 ---
 
 # 1.2 Sample space
@@ -43,9 +44,9 @@ Distributive Laws:
 1. $P(\Omega)=1$
 2. If $A \supset \Omega$, then $P(A) \ge 0$.
 3. If A1 and A2 are disjoint, then $P(A1 \cup A2) = P(A1) + P(A2)$
-4. $P(A^c) = 1− P(A)$ and $P(\emptyset) = 0$.
+4. $P(A^c) = 1 - P(A)$ and $P(\emptyset) = 0$.
 5. If $A \subset B$, then $P(A) \le P(B)$.
-6. *Addition Law* $P(A \cup B) = P(A)+ P(B)− P(A \cap B)$.
+6. *Addition Law* $P(A \cup B) = P(A)+ P(B)- P(A \cap B)$.
 
 # 1.4 Computing Probabilities: Counting methods
 
@@ -57,7 +58,7 @@ $P(A) = \frac{\textit{number of ways A can occur}}{\textit{total number of outco
 - **Extended multiplication principle**: If there are p experiments, and the first has n1 possible outcomes, the second
 n2, ..., and the pth np possible outcomes, then there are a total of $n1n2...np$ possible outcomes for the p experiments.
 - A **permutation** is an ordered arrangement of objects.
-- For a set of size $n$ and $a$ sample of size $r$ , there are $n^r$ different ordered samples $with replacement$ and $n(n − 1)(n − 2)...(n − r + 1)=n!$ different ordered samples $without replacement$.
+- For a set of size $n$ and $a$ sample of size $r$ , there are $n^r$ different ordered samples $with replacement$ and $n(n - 1)(n - 2)...(n - r + 1)=n!$ different ordered samples $without replacement$.
 - A **combination** is unordered sample
 - The number of unordered samples of r objects selected from n objects without replacement is $\binom{n}{r}$
 - The numbers $\binom{n}{r}$, called the **binomial coefficients**, occur in the expansion
@@ -103,7 +104,7 @@ A and B are said to be independent events if $P(A \cap B) = P(A)P(B)$.
 
 a collection of events, $A_1, A_2,... , A_n$, to be **mutually independent** if for any subcollection, $Ai1,... , Aim$ ,
 
-$P(A_{i_1} \cap ... \cap A_{i_m} ) = P(A_{i_1} ) · · · P(A_{i_m})$
+$P(A_{i_1} \cap ... \cap A_{i_m} ) = P(A_{i_1} ) ... P(A_{i_m})$
 
 Special examples
 - Matching DNA Fragments
